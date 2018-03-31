@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="BillManagement" targetNamespace="http://esb.frontier.com/BillManagement" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://esb.frontier.com/BillManagement" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <wsdl:documentation>Version: 1.11</wsdl:documentation>
+    <wsdl:types>
+      <xsd:schema targetNamespace="http://esb.frontier.com/BillManagement" xmlns:bons0="http://esb.frontier.com/BillManagement" xmlns:bons01="http://esb.frontier.com/sharedType" xmlns:bons010="http://esb.frontier.com/sharedType" xmlns:bons011="http://esb.frontier.com/BillManagement" xmlns:bons012="http://esb.frontier.com/sharedType" xmlns:bons013="http://esb.frontier.com/sharedType" xmlns:bons014="http://esb.frontier.com/sharedType" xmlns:bons015="http://esb.frontier.com/sharedType" xmlns:bons016="http://esb.frontier.com/sharedType" xmlns:bons017="http://esb.frontier.com/sharedType" xmlns:bons018="http://esb.frontier.com/sharedType" xmlns:bons019="http://esb.frontier.com/sharedType" xmlns:bons02="http://esb.frontier.com/sharedType" xmlns:bons020="http://esb.frontier.com/sharedType" xmlns:bons021="http://esb.frontier.com/BillManagement" xmlns:bons022="http://esb.frontier.com/sharedType" xmlns:bons023="http://esb.frontier.com/sharedType" xmlns:bons024="http://esb.frontier.com/sharedType" xmlns:bons025="http://esb.frontier.com/sharedType" xmlns:bons026="http://esb.frontier.com/sharedType" xmlns:bons03="http://esb.frontier.com/BillManagement" xmlns:bons04="http://esb.frontier.com/sharedType" xmlns:bons041="http://esb.frontier.com/BillManagement" xmlns:bons05="http://esb.frontier.com/sharedType" xmlns:bons051="http://esb.frontier.com/BillManagement" xmlns:bons06="http://esb.frontier.com/sharedType" xmlns:bons061="http://esb.frontier.com/BillManagement" xmlns:bons07="http://esb.frontier.com/sharedType" xmlns:bons071="http://esb.frontier.com/BillManagement" xmlns:bons08="http://esb.frontier.com/sharedType" xmlns:bons081="http://esb.frontier.com/BillManagement" xmlns:bons09="http://esb.frontier.com/sharedType" xmlns:bons1="http://esb.frontier.com/BillManagement" xmlns:bons11="http://esb.frontier.com/sharedType" xmlns:bons12="http://esb.frontier.com/sharedType" xmlns:bons13="http://esb.frontier.com/sharedType" xmlns:bons14="http://esb.frontier.com/sharedType" xmlns:bons15="http://esb.frontier.com/sharedType" xmlns:bons16="http://esb.frontier.com/sharedType" xmlns:bons2="http://esb.frontier.com/BillManagement" xmlns:bons21="http://esb.frontier.com/sharedType" xmlns:bons22="http://esb.frontier.com/sharedType" xmlns:bons23="http://esb.frontier.com/sharedType" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            <xsd:import namespace="http://esb.frontier.com/sharedType"/>
+         <xsd:element name="CancelReprintOfBillingStatements">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="cancelReprintOfBillingStatementsinput" nillable="true" type="bons0:msg_CancelReprintOfBillingStatementsRequest"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="CancelReprintOfBillingStatementsResponse">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="cancelReprintOfBillingStatements" nillable="true" type="bons0:msg_CancelReprintOfBillingStatementsResponse"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="FindAccountReceivable">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="findAccountReceivableInput" nillable="true" type="tns:msg_FindAccountReceivableRequest"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="FindAccountReceivableResponse">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="findAccountReceivableOutput" nillable="true" type="tns:msg_FindAccountReceivableResponse"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="FindAvailableBillingCycles">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="findAvailableBillingCyclesInput" nillable="true" type="bons0:msg_FindAvailableBillingCyclesRequest"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="FindAvailableBillingCyclesResponse">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="findAvailableBillingCyclesOutput" nillable="true" type="bons0:msg_FindAvailableBillingCyclesResponse"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="FindPendingBillingStatementReprintRequests">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="findPendingBillingStatementReprintRequestsInput" nillable="true" type="bons0:msg_FindPendingBillingStatementReprintRequestsRequest"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="FindPendingBillingStatementReprintRequestsResponse">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="findPendingBillingStatementReprintRequestsOutput" nillable="true" type="bons0:msg_FindPendingBillingStatementReprintRequestsResponse"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="FindReprintableBillingStatements">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="findReprintableBillingStatementsInput" nillable="true" type="bons0:msg_FindReprintableBillingStatementsRequest"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="FindReprintableBillingStatementsResponse">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="findReprintableBillingStatementsOutput" nillable="true" type="bons0:msg_FindReprintableBillingStatementsResponse"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="ReprintBillingStatements">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="reprintBillingStatementsInput" nillable="true" type="bons0:msg_ReprintBillingStatementsRequest"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="ReprintBillingStatementsResponse">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="reprintBillingStatementsOutput" nillable="true" type="bons0:msg_ReprintBillingStatementsResponse"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="RetrieveBillingStatement">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="retrieveBillingStatementInput" nillable="true" type="bons0:msg_RetrieveBillingStatementRequest"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="RetrieveBillingStatementResponse">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="retrieveBillingStatementOutput" nillable="true" type="bons0:msg_RetrieveBillingStatementResponse"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="RetrieveConsolidatedBalance">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="retrieveConsolidatedBalanceInput" nillable="true" type="bons0:msg_RetrieveConsolidatedBalanceRequest"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="RetrieveConsolidatedBalanceResponse">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="retrieveConsolidatedBalanceOutput" nillable="true" type="bons0:msg_RetrieveConsolidatedBalanceResponse"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+      <xsd:complexType name="RetrieveConsolidatedBalanceResponse_PaymentPlan">
+      <xsd:sequence>
+         <xsd:element maxOccurs="1" minOccurs="0" name="autoPayment" nillable="false" type="xsd:boolean"/>
+         <xsd:element maxOccurs="1" minOccurs="0" name="paymentMethod" nillable="false" type="bons1:RetrieveConsolidatedBalanceResponse_PaymentMethod"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="RetrieveConsolidatedBalanceResponse_PaymentMethod">
+      <xsd:sequence>
+         <xsd:element maxOccurs="1" minOccurs="0" name="paymentMethodName" nillable="false" type="xsd:string"/>
+         <xsd:element maxOccurs="1" minOccurs="0" name="thirdPartyCollectionPaymentMethod" nillable="false" type="bons1:RetrieveConsolidatedBalanceResponse_ThirdPartyCollectionPaymentMethod"/>
+         <xsd:element minOccurs="0" name="description" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="RetrieveConsolidatedBalanceResponse_ThirdPartyCollectionPaymentMethod">
+      <xsd:sequence>
+         <xsd:element maxOccurs="1" minOccurs="0" name="thirdPartyId" nillable="false" type="xsd:string"/>
+         <xsd:element maxOccurs="1" minOccurs="0" name="thirdPartyName" nillable="false" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="msg_FindReprintableBillingStatementsRequest">
+      <xsd:sequence>
+         <xsd:element name="header" type="bons01:RequestHeader"/>
+         <xsd:element name="accountId" type="bons01:AccountIdRequest"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="FindAccountReceivableResponse_CustomerBillingCycle">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="billingDate" nillable="true" type="xsd:dateTime">
+            <xsd:annotation/>
+         </xsd:element>
+         <xsd:element minOccurs="0" name="billCycle" type="xsd:int"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="BillManagement_ReprintableBillId">
+      <xsd:sequence>
+         <xsd:element name="billingDate" nillable="true" type="xsd:date"/>
+         <xsd:element name="billCycle" type="xsd:int"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="RetrieveBillingStatementResponse_CustomerBillingCycle">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="billCycle" type="xsd:int"/>
+         <xsd:element maxOccurs="1" minOccurs="0" name="billingDate" nillable="true" type="xsd:dateTime"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="msg_FindAccountReceivableResponse">
+      <xsd:sequence>
+         <xsd:element name="header" type="bons11:ResponseHeader"/>
+         <xsd:element minOccurs="0" name="billingAccountId" type="bons11:AccountId"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="customerBill" type="bons011:FindAccountReceivableResponse_CustomerBill"/>
+         <xsd:element minOccurs="0" name="accountReceivableTotals" type="bons011:FindAccountReceivableResponse_AccountReceivableTotals"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="customerAdjustment" type="bons011:FindAccountReceivableResponse_CustomerAdjustment"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="customerPayment" type="bons011:FindAccountReceivableResponse_CustomerPayment"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="FindAccountReceivableResponse_AccountReceivableTotals">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="unpostedCurrentAdjustments" type="bons12:Money"/>
+         <xsd:element minOccurs="0" name="postedCurrentAdjustments" type="bons12:Money"/>
+         <xsd:element minOccurs="0" name="unpostedPayments" type="bons12:Money"/>
+         <xsd:element minOccurs="0" name="unpostedPriorAdjustments" type="bons12:Money"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="FindAccountReceivableResponse_CustomerPayment">
+      <xsd:sequence>
+         <xsd:element maxOccurs="1" minOccurs="0" name="amount" nillable="false" type="bons02:Money"/>
+         <xsd:element maxOccurs="1" minOccurs="0" name="paymentDate" nillable="false" type="xsd:dateTime"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="paymentPlan" nillable="false" type="bons2:FindAccountReceivableResponse_PaymentPlan"/>
+         <xsd:element minOccurs="0" name="batchId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="batchSequenceNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="postDateTime" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="postedBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="status" type="bons02:PaymentStatus_Enum"/>
+         <xsd:element minOccurs="0" name="referenceNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="paymentInformationSource" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="billingAccountId" type="bons02:AccountId"/>
+         <xsd:element minOccurs="0" name="memberAccountId" type="bons02:AccountId"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="FindAccountReceivableResponse_PaymentPlan">
+      <xsd:sequence>
+         <xsd:element maxOccurs="1" minOccurs="0" name="autoPayment" nillable="false" type="xsd:boolean"/>
+         <xsd:element maxOccurs="1" minOccurs="0" name="paymentMethod" nillable="false" type="bons1:FindAccountReceivableResponse_PaymentMethod"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="FindAccountReceivableResponse_PaymentMethod">
+      <xsd:sequence>
+         <xsd:element maxOccurs="1" minOccurs="0" name="paymentMethodName" nillable="false" type="xsd:string"/>
+         <xsd:element maxOccurs="1" minOccurs="0" name="thirdPartyCollectionPaymentMethod" nillable="false" type="bons1:FindAccountReceivableResponse_ThirdPartyCollectionPaymentMethod"/>
+         <xsd:element minOccurs="0" name="description" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="FindAccountReceivableResponse_ThirdPartyCollectionPaymentMethod">
+      <xsd:sequence>
+         <xsd:element maxOccurs="1" minOccurs="0" name="thirdPartyId" nillable="false" type="xsd:string"/>
+         <xsd:element maxOccurs="1" minOccurs="0" name="thirdPartyName" nillable="false" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="FindAccountReceivableResponse_CustomerAdjustment">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="status" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="adjustmentAmount" type="bons21:Money"/>
+         <xsd:element minOccurs="0" name="adjustmentDate" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="referenceNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="batchId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="batchSequenceNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="postDateTime" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="postedBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="adjustmentType" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="adjustmentDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="chargeCodeDescription" type="bons21:CodeDescription"/>
+         <xsd:element minOccurs="0" name="postingStatus" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="taxAmount" type="bons21:Money"/>
+         <xsd:element minOccurs="0" name="glAccount" type="bons021:FindAccountReceivableResponse_GLAccount"/>
+         <xsd:element minOccurs="0" name="bankName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="billingAccountId" type="bons21:AccountId"/>
+         <xsd:element minOccurs="0" name="parentCaseId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="childCaseId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="isPostedAndUnBilled" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="willChangeBalanceWhenPosted" type="xsd:boolean"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="FindAccountReceivableResponse_GLAccount">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="glAccountId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="glAccountName" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="FindAccountReceivableResponse_CustomerBill">
+      <xsd:sequence>
+         <xsd:element maxOccurs="1" minOccurs="0" name="billingCycle" nillable="true" type="bons03:FindAccountReceivableResponse_CustomerBillingCycle"/>
+         <xsd:element minOccurs="0" name="priorBillAmount" type="bons22:Money"/>
+         <xsd:element minOccurs="0" name="priorBillAdjustmentAmount" type="bons22:Money"/>
+         <xsd:element minOccurs="0" name="lastPaymentDate" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="nonProRatedChargesAmount" type="bons22:Money"/>
+         <xsd:element minOccurs="0" name="proRatedChargesAndCurrentAdjustmentAmount" type="bons22:Money"/>
+         <xsd:element minOccurs="0" name="tollAmount" type="bons22:Money"/>
+         <xsd:element minOccurs="0" name="taxAmount" type="bons22:Money"/>
+         <xsd:element minOccurs="0" name="totalPaymentAmount" type="bons22:Money"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="accountReceivableDetail" type="bons03:FindAccountReceivableResponse_AccountReceivableDetail"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="FindAccountReceivableResponse_AccountReceivableDetail">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="amount" type="bons04:Money"/>
+         <xsd:element minOccurs="0" name="postDateTime" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="transactionDate" type="xsd:dateTime"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="customerAdjustement" type="bons1:FindAccountReceivableResponse_AccountReceivable_CustomerAdjustment"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="customerPayment" type="bons1:FindAccountReceivable_AccountReceivable_CustomerPayment"/>
+         <xsd:element minOccurs="0" name="taxCode" type="bons1:FindAccountReceivableResponse_TaxCode"/>
+         <xsd:element minOccurs="0" name="glAccount" type="bons1:FindAccountReceivableResponse_AccountReceivable_GLAccount"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="FindAccountReceivableResponse_AccountReceivable_GLAccount">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="glEntity" type="bons1:FindAccountReceivableResponse_GLAcountingEntity"/>
+			<xsd:element minOccurs="0" name="glAccountingCategory" type="bons1:FindAccountReceivableResponse_AccountReceivable_GLAccountingCategory"/>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="FindAccountReceivableResponse_AccountReceivable_GLAccountingCategory">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="glAccountingCategoryId" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="description" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="FindAccountReceivableResponse_GLAcountingEntity">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="glAccountingEntityId" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="description" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="FindAccountReceivableResponse_TaxCode">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="taxCodeDescription" type="bons05:CodeDescription"/>
+			<xsd:element minOccurs="0" name="taxPercentage" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="taxingSequence" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="FindAccountReceivable_AccountReceivable_CustomerPayment">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="postDateTime" type="xsd:dateTime"/>
+			<xsd:element minOccurs="0" name="paymentDate" type="xsd:dateTime"/>
+			<xsd:element minOccurs="0" name="amount" type="bons06:Money"/>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="FindAccountReceivableResponse_AccountReceivable_CustomerAdjustment">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="adjustmentType" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="adjustmentDescription" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="postDateTime" type="xsd:dateTime"/>
+			<xsd:element minOccurs="0" name="adjustmentDate" type="xsd:dateTime"/>
+			<xsd:element minOccurs="0" name="adjustmentAmount" type="bons07:Money"/>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="msg_RetrieveConsolidatedBalanceRequest">
+      <xsd:sequence>
+         <xsd:element name="header" type="bons08:RequestHeader"/>
+         <xsd:choice>
+            <xsd:element name="dstAccountNumber" type="xsd:string"/>
+            <xsd:element name="accountId" type="bons08:AccountIdRequest"/>
+         </xsd:choice>
+         <xsd:element minOccurs="0" name="EBPPUserId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="paymentAndAdjustmentHistoryStartDate" type="xsd:dateTime"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="RetrieveConsolidatedBalanceResponse_AccountReceivableTotals">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="pendingEBPPPaymentsNotInDPI" type="bons13:Money"/>
+			<xsd:element minOccurs="0" name="pendingUnpostedPayments" type="bons13:Money"/>
+			<xsd:element minOccurs="0" name="postedUnbilledBelowTheLineAdjustments" type="bons13:Money"/>
+			<xsd:element minOccurs="0" name="currentBalanceInDPI" type="bons13:Money"/>
+			<xsd:element minOccurs="0" name="consolidatedBalanceDue" type="bons13:Money"/>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="RetrieveConsolidatedBalanceResponse_CustomerPayment">
+      <xsd:sequence>
+         <xsd:element maxOccurs="1" minOccurs="0" name="amount" nillable="false" type="bons09:Money"/>
+         <xsd:element maxOccurs="1" minOccurs="0" name="paymentDate" nillable="false" type="xsd:dateTime"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="paymentPlan" nillable="false" type="bons2:RetrieveConsolidatedBalanceResponse_PaymentPlan"/>
+         <xsd:element minOccurs="0" name="batchId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="batchSequenceNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="postDateTime" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="postedBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="status" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="referenceNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="paymentInformationSource" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="billingAccountId" type="bons09:AccountId"/>
+         <xsd:element minOccurs="0" name="memberAccountId" type="bons09:AccountId"/>
+         <xsd:element minOccurs="0" name="transactionId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="EBPPUserId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="paymentOrigin" type="bons2:RetrieveConsolidatedBalance_PaymentOrigin_Enum"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xs:simpleType name="RetrieveConsolidatedBalance_PaymentOrigin_Enum">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="DPI"/>
+         <xs:enumeration value="EBPP"/>
+         <xs:enumeration value="DPIAndEBPP"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xsd:complexType name="msg_FindPendingBillingStatementReprintRequestsResponse">
+      <xsd:sequence>
+         <xsd:element name="header" type="bons010:ResponseHeader"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="accountBillReprintRequest" type="bons1:FindPendingBillingStatementReprintRequestResponse_AccountBillReprintRequest"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="FindPendingBillingStatementReprintRequestResponse_AccountBillReprintRequest">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="accountId" type="bons14:AccountId"/>
+         <xsd:element maxOccurs="unbounded" name="reprintRequest" type="bons041:FindPendingBillingStatementReprintRequestsRequest_ReprintRequest"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="FindPendingBillingStatementReprintRequestsRequest_ReprintRequest">
+      <xsd:complexContent>
+         <xsd:extension base="bons051:BillManagement_ReprintableBillId">
+            <xsd:sequence>
+               <xsd:element name="dateRequested" type="xsd:date"/>
+               <xsd:element name="reprintRequestId" type="xsd:int"/>
+            </xsd:sequence>
+         </xsd:extension>
+      </xsd:complexContent>
+   </xsd:complexType>
+      <xsd:complexType name="msg_FindPendingBillingStatementReprintRequestsRequest">
+      <xsd:sequence>
+         <xsd:element name="header" type="bons012:RequestHeader"/>
+         <xsd:element name="accountId" type="bons012:AccountIdRequest"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="msg_RetrieveBillingStatementResponse">
+      <xsd:sequence>
+         <xsd:element minOccurs="1" name="header" type="bons013:ResponseHeader"/>
+         <xsd:element minOccurs="0" name="customerBill" type="bons1:RetrieveBillingStatementResponse_CustomerBill"/>
+         <xsd:element minOccurs="0" name="preferredLanguageCode" type="bons013:LanguageCode_Enum"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="RetrieveBillingStatementResponse_CustomerBill">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="accountNumber" type="bons15:DpiAccountNumber_Type"/>
+         <xsd:element minOccurs="0" name="isBillPending" type="xsd:boolean"/>
+         <xsd:element maxOccurs="1" minOccurs="0" name="customerBillingCycle" type="bons061:RetrieveBillingStatementResponse_CustomerBillingCycle"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="billingStatementLine" type="bons061:RetrieveBillingStatementResponse_BillingStatementLineItem"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="RetrieveBillingStatementResponse_BillingStatementLineItem">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="lineNumber" type="xsd:int"/>
+         <xsd:element minOccurs="0" name="dstPrintTag" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="expandedPrintTag" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="textDisplay" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="value" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="categoryName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="categoryStartIndicator" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="categoryTotalIndicator" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="amount" type="bons014:Money"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="msg_ReprintBillingStatementsRequest">
+      <xsd:sequence>
+         <xsd:element name="header" type="bons015:RequestHeader"/>
+         <xsd:element maxOccurs="unbounded" name="reprintableAccountBills" type="bons1:BillManagement__ReprintableAccountBills"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="BillManagement__ReprintableAccountBills">
+      <xsd:sequence>
+         <xsd:element name="accountId" type="bons016:AccountId"/>
+         <xsd:element maxOccurs="unbounded" name="reprintableBillId" type="bons1:BillManagement_ReprintableBillId"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="RetrieveConsolidatedBalanceResponse_CustomerBill">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="newCharges" type="bons017:Money"/>
+			<xsd:element minOccurs="0" name="balanceForward" type="bons017:Money"/>
+			<xsd:element minOccurs="0" name="previousBalance" type="bons017:Money"/>
+			<xsd:element minOccurs="0" name="totalPaymentAmount" type="bons017:Money"/>
+			<xsd:element minOccurs="0" name="billingCycle" type="bons2:RetrieveConsolidatedBalanceResponse_CustomerBillingCycle"/>
+			<xsd:element minOccurs="0" name="billDueDate" type="xsd:dateTime"/>
+			<xsd:element minOccurs="0" name="currentDueBalance" type="bons017:Money"/>
+			<xsd:element minOccurs="0" name="totalPastDue" type="bons017:Money"/>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="RetrieveConsolidatedBalanceResponse_CustomerBillingCycle">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="billingDate" type="xsd:dateTime"/>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="msg_FindAccountReceivableRequest">
+      <xsd:sequence>
+         <xsd:element name="header" type="bons018:RequestHeader"/>
+         <xsd:element name="accountId" type="bons018:AccountIdRequest"/>
+         <xsd:element minOccurs="0" name="includeOnlyPostedAdjustmentsNeverOnBill" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="includeOnlyPostedPaymentsNeverOnBill" type="xsd:boolean"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="msg_FindReprintableBillingStatementsResponse">
+      <xsd:sequence>
+         <xsd:element name="header" type="bons019:ResponseHeader"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="reprintableAccountBill" type="bons1:BillManagement__ReprintableAccountBills"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="RetrieveConsolidatedBalanceResponse_GLAccount">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="glAccountId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="glAccountName" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="msg_FindAvailableBillingCyclesRequest">
+      <xsd:sequence>
+         <xsd:element name="header" type="bons020:RequestHeader"/>
+         <xsd:element name="environment" type="bons020:Environment_Type"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="msg_RetrieveConsolidatedBalanceResponse">
+		<xsd:sequence>
+			<xsd:element name="header" type="bons16:ResponseHeader"/>
+			<xsd:element minOccurs="0" name="billingAccountId" type="bons16:AccountId"/>
+			<xsd:element minOccurs="0" name="consolidatedBalanceTotals" type="bons071:RetrieveConsolidatedBalanceResponse_AccountReceivableTotals"/>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="customerPayment" type="bons071:RetrieveConsolidatedBalanceResponse_CustomerPayment"/>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="customerAdjustment" type="bons071:RetrieveConsolidatedBalanceResponse_CustomerAdjustment"/>
+			<xsd:element minOccurs="0" name="customerBill" type="bons071:RetrieveConsolidatedBalanceResponse_CustomerBill"/>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="RetrieveConsolidatedBalanceResponse_CustomerAdjustment">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="status" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="adjustmentAmount" type="bons23:Money"/>
+         <xsd:element minOccurs="0" name="adjustmentDate" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="referenceNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="batchId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="batchSequenceNumber" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="postDateTime" type="xsd:dateTime"/>
+         <xsd:element minOccurs="0" name="postedBy" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="adjustmentType" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="adjustmentDescription" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="chargeCodeDescription" type="bons23:CodeDescription"/>
+         <xsd:element minOccurs="0" name="postingStatus" type="xsd:string"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="taxAmount" type="bons23:Money"/>
+         <xsd:element minOccurs="0" name="glAccount" type="bons081:RetrieveConsolidatedBalanceResponse_GLAccount"/>
+         <xsd:element minOccurs="0" name="bankName" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="billingAccountId" type="bons23:AccountId"/>
+         <xsd:element minOccurs="0" name="parentCaseId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="childCaseId" type="xsd:string"/>
+         <xsd:element minOccurs="0" name="isPostedAndUnBilled" type="xsd:boolean"/>
+         <xsd:element minOccurs="0" name="willChangeBalanceWhenPosted" type="xsd:boolean"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="msg_RetrieveBillingStatementRequest">
+      <xsd:sequence>
+         <xsd:element name="header" type="bons022:RequestHeader"/>
+         <xsd:element minOccurs="0" name="accountId" type="bons022:AccountIdRequest"/>
+         <xsd:element minOccurs="0" name="billDate" type="xsd:date"/>
+         <xsd:element minOccurs="0" name="pin" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="msg_FindAvailableBillingCyclesResponse">
+      <xsd:sequence>
+         <xsd:element name="header" type="bons023:ResponseHeader"/>
+         <xsd:element maxOccurs="unbounded" minOccurs="0" name="availableBillingCycle" type="xsd:integer"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="msg_ReprintBillingStatementsResponse">
+      <xsd:sequence>
+         <xsd:element name="header" type="bons024:ResponseHeader"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="msg_CancelReprintOfBillingStatementsResponse">
+      <xsd:sequence>
+         <xsd:element name="header" type="bons025:ResponseHeader"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="msg_CancelReprintOfBillingStatementsRequest">
+      <xsd:sequence>
+         <xsd:element name="header" type="bons026:RequestHeader"/>
+         <xsd:element maxOccurs="unbounded" name="reprintRequestId" type="xsd:int"/>
+      </xsd:sequence>
+   </xsd:complexType>
+    </xsd:schema>
+        <xsd:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://esb.frontier.com/sharedType" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://esb.frontier.com/sharedType" xmlns:bons1="http://esb.frontier.com/sharedType" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xsd:complexType name="AccountIdRequest">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="environment" type="bons0:Environment_Type"/>
+         <xsd:choice>
+            <xsd:element minOccurs="1" name="accountNumber" type="bons0:DpiAccountNumber_Type"/>
+            <xsd:element minOccurs="1" name="universalServiceId" type="bons0:UniversalServiceIdentifier_Type"/>
+            <xsd:element minOccurs="1" name="telephoneNumber" type="bons0:TelephoneNumberAsId"/>
+         </xsd:choice>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xsd:complexType name="TelephoneNumberAsId">
+      <xsd:sequence>
+         <xsd:element minOccurs="0" name="telephoneNumber" type="bons1:TelephoneNumber_Type"/>
+         <xsd:element minOccurs="0" name="sequenceNumber" type="xsd:int"/>
+         <xsd:element minOccurs="0" name="isFictitious" type="xsd:boolean"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xs:simpleType name="PricingScheduleType_Enum">
+      <xs:restriction base="string">
+         <enumeration value="Contracted"/>
+         <enumeration value="CustomerLevelPricing"/>
+         <enumeration value="NoOverride"/>
+         <enumeration value="Vacation"/>
+         <enumeration value="Overridden"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="Plus4_Type">
+      <xs:restriction base="string">
+         <xs:pattern value="\d{4}"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="DpiAccountNumber_Type">
+      <xs:restriction base="string">
+         <pattern value="\d{8}"/>
+         <pattern value="\d{9}"/>
+         <pattern value="\d{12}"/>
+         <pattern value="\d{17}"/>
+         <pattern value="\d{21}"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="MonthlyOrNonRecurringCharge_Type">
+      <xs:restriction base="string">
+         <xs:enumeration value="Monthly"/>
+         <xs:enumeration value="NonRecurring"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="PaymentStatus_Enum">
+      <xs:restriction base="string">
+         <enumeration value="PaymentDeclined"/>
+         <enumeration value="PaymentApproved"/>
+         <enumeration value="SystemError"/>
+         <enumeration value="InvalidInformation"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="MediumType_Enum">
+      <xs:restriction base="string">
+         <xs:enumeration value="FIBER"/>
+         <xs:enumeration value="COPPER"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="TelephoneNumberPool_Enum">
+      <xs:restriction base="string">
+         <enumeration value="FICTITIOUS"/>
+         <enumeration value="POTS"/>
+         <enumeration value="VOIP"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="ProductType_Enum">
+      <xs:restriction base="string">
+         <xs:enumeration value="Promotion"/>
+         <xs:enumeration value="Package"/>
+         <xs:enumeration value="Bundle"/>
+         <xs:enumeration value="AlaCarte"/>
+         <xs:enumeration value="CPE"/>
+         <xs:enumeration value="Feature"/>
+         <xs:enumeration value="Reward"/>
+         <xs:enumeration value="Grandfathered"/>
+         <xs:enumeration value="Credit"/>
+         <xs:enumeration value="Tagalong"/>
+         <xs:enumeration value="Surcharge"/>
+         <xs:enumeration value="Tax"/>
+         <xs:enumeration value="Carrier"/>
+         <xs:enumeration value="Term"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="SocialSecurityNumber_Type">
+      <xs:restriction base="string">
+         <xs:maxLength value="12"/>
+         <xs:pattern value="\d{10}"/>
+         <xs:pattern value="\d{3}-\d{2}-\d{4}"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="FacilityStatusReason_Enum">
+      <xs:restriction base="string">
+         <enumeration value="NonPayment"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="FacilityStatus_Enum">
+      <xs:restriction base="string">
+         <enumeration value="Bad"/>
+         <enumeration value="Carrier"/>
+         <enumeration value="Disconnect"/>
+         <enumeration value="Held"/>
+         <enumeration value="InService"/>
+         <enumeration value="Maintenance"/>
+         <enumeration value="PartyLine"/>
+         <enumeration value="Receive"/>
+         <enumeration value="Transmit"/>
+         <enumeration value="Unequipped"/>
+         <enumeration value="Vacant"/>
+         <enumeration value="WireThrough"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="ConnectionStatus_Enum">
+      <xs:restriction base="string">
+         <xs:enumeration value="Connected"/>
+         <xs:enumeration value="Disconnected"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="AccountStatus_Enum">
+      <xs:restriction base="string">
+         <enumeration value="Live"/>
+         <enumeration value="Vacation"/>
+         <enumeration value="Final"/>
+         <enumeration value="Treatment"/>
+         <enumeration value="Active"/>
+         <enumeration value="Suspended"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="ServiceFeature_Enum">
+      <xs:restriction base="string">
+         <enumeration value="Data"/>
+         <enumeration value="Video"/>
+         <enumeration value="Voice"/>
+         <enumeration value="FSecure"/>
+         <enumeration value="Gaming"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="TelephoneNumber_Type">
+      <xs:restriction base="string">
+         <length value="10"/>
+         <pattern value="\d{10}"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="WorkOrderType_Enum">
+      <annotation>
+         <documentation>SO = Serivce Order TT = Trouble Ticket</documentation>
+      </annotation>
+      <xs:restriction base="string">
+         <enumeration value="SO"/>
+         <enumeration value="TT"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="ProductCategory_Enum">
+      <xs:restriction base="string">
+         <enumeration value="Data"/>
+         <enumeration value="Voice"/>
+         <enumeration value="Video"/>
+         <enumeration value="FSecure"/>
+         <enumeration value="Gaming"/>
+         <enumeration value="Bundle"/>
+         <enumeration value="Phone and Internet"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="HousingStatus_Enum">
+      <xs:restriction base="string">
+         <enumeration value="BUY"/>
+         <enumeration value="RENT"/>
+         <enumeration value="OWN"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="PaymentMethod_Enum">
+      <xs:restriction base="string">
+         <enumeration value="CreditCard"/>
+         <enumeration value="ElectronicCheck"/>
+         <enumeration value="PinlessDebitCard"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="TrueFalseRefused_Enum">
+      <xs:restriction base="string">
+         <enumeration value="True"/>
+         <enumeration value="False"/>
+         <enumeration value="Refused"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="HSICapable_Enum">
+      <xs:restriction base="string">
+         <enumeration value="Yes"/>
+         <enumeration value="No"/>
+         <enumeration value="Conditional"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="PaymentReason_Enum">
+      <xs:restriction base="string">
+         <enumeration value="BillPayment"/>
+         <enumeration value="UnpaidFinalBalance"/>
+         <enumeration value="PaymentForDisconnect"/>
+         <enumeration value="DepositFeeforInitialResident"/>
+         <enumeration value="DepositFeeforAdditionalResident"/>
+         <enumeration value="DepositFeeforTransferofResident"/>
+         <enumeration value="DepositFeeforConversionofResident"/>
+         <enumeration value="DepositFeeforCaliforniaCreditCheckSystemOfResident"/>
+         <enumeration value="DepositFeeforInitialInstallment"/>
+         <enumeration value="DepositFeeforInitialBusiness"/>
+         <enumeration value="DepositFeeforAdditionalBusiness"/>
+         <enumeration value="DepositFeeforTransferofBusiness"/>
+         <enumeration value="DepositFeeforConversionofBusiness"/>
+         <enumeration value="ConvenienceFee"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="WorkOrderOriginatingSystem_Enum">
+      <annotation>
+         <documentation>DPI = DPI RR = M6 trouble ticket RC = M6 service order RM = Remedy NC = NetCool</documentation>
+      </annotation>
+      <xs:restriction base="string">
+         <enumeration value="DPI"/>
+         <enumeration value="RR"/>
+         <enumeration value="RC"/>
+         <enumeration value="RM"/>
+         <enumeration value="NC"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="CurrencyAmount_Type">
+      <xs:restriction base="double">
+         <xs:pattern value="-?([1-9][0-9]*|[0-9])(\.[0-9]{1,2})?|(\.[0-9]{1,2})"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="LineCardPortType_Enum">
+      <xs:restriction base="string">
+         <xs:enumeration value="POTS"/>
+         <xs:enumeration value="HSI"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="NpaNxx_Type">
+      <xs:restriction base="int">
+         <xs:pattern value="[0-9]{6}"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="ProductPriceAlterationType_Enum">
+      <xs:restriction base="string">
+         <xs:enumeration value="OtherChargesCredits"/>
+         <xs:enumeration value="VacationRate"/>
+         <xs:enumeration value="PackageItemPercentage"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="ZipCode_Type">
+      <xs:restriction base="string">
+         <xs:pattern value="\d{5}"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="WorkOrderActivity_Enum">
+      <xs:restriction base="string">
+         <enumeration value="NEW"/>
+         <enumeration value="CHANGE"/>
+         <enumeration value="INSIDEMOVE"/>
+         <enumeration value="OUTSIDEMOVE"/>
+         <enumeration value="DISCONNECT"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="AccountType_Enum">
+      <xs:restriction base="string">
+         <enumeration value="BILLING"/>
+         <enumeration value="MEMBER"/>
+         <enumeration value="SUMMARY"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="UniversalServiceIdentifier_Type">
+      <xs:restriction base="long">
+         <xs:pattern value="[0-9]{12}"/>
+         <maxInclusive value="999999999999"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="PassiveOpticalNetworkType_Enum">
+      <xs:restriction base="string">
+         <enumeration value="GPON"/>
+         <enumeration value="BPON"/>
+         <enumeration value="UnKnown"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="EmailAddress_Type">
+      <xs:restriction base="string">
+         <pattern value="[a-zA-Z0-9._%\-]+@[a-zA-Z0-9._%\-]+\.[a-zA-Z]{2,4}"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="LanguageCode_Enum">
+      <xs:restriction base="string">
+         <xs:enumeration value="ENG"/>
+         <xs:enumeration value="SPA"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="WorkOrderTransactionType_Enum">
+      <xs:restriction base="string">
+         <xs:enumeration value="SOC"/>
+         <xs:enumeration value="SOU"/>
+         <xs:enumeration value="TTC"/>
+         <xs:enumeration value="TTU"/>
+         <xs:enumeration value="NOC"/>
+         <xs:enumeration value="NOU"/>
+         <xs:enumeration value="CAN"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="PartnerOrderId_Enum">
+      <xs:restriction base="string">
+         <enumeration value="IR"/>
+         <enumeration value="NEST"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="CustomerFacilitiesPortType_Enum">
+      <xs:restriction base="string">
+         <xs:enumeration value="POTS"/>
+         <xs:enumeration value="HSI"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="TaxCategory_Enum">
+      <xs:restriction base="string">
+         <enumeration value="Flat"/>
+         <enumeration value="Other"/>
+         <enumeration value="State"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="DropType_Enum">
+      <xs:restriction base="string">
+         <xs:enumeration value="Aerial"/>
+         <xs:enumeration value="Buried"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="CircuitId_Type">
+      <xs:restriction base="string">
+         <xs:maxLength value="60"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="Environment_Type">
+      <xs:restriction base="string">
+         <xs:pattern value="[A-Z]{2}"/>
+         <xs:pattern value="[a-z]{2}"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:simpleType name="CreditCardBrand_Enum">
+      <xs:restriction base="string">
+         <enumeration value="Visa"/>
+         <enumeration value="Discover"/>
+         <enumeration value="AmericanExpress"/>
+         <enumeration value="MasterCard"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xsd:complexType name="RequestHeader">
+      <xsd:complexContent>
+         <xsd:extension base="bons1:AbstractHeader">
+            <xsd:sequence>
+               <xsd:element minOccurs="1" name="securityInfo" type="bons1:SecurityInfo"/>
+            </xsd:sequence>
+         </xsd:extension>
+      </xsd:complexContent>
+   </xsd:complexType>
+      <xsd:complexType name="SecurityInfo">
+      <xsd:sequence>
+         <xsd:element minOccurs="1" name="userId" type="xsd:string"/>
+         <xsd:element minOccurs="1" name="employeeId" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:complexType>
+      <xs:complexType abstract="true" name="AbstractHeader">
+		<xs:annotation>
+			<xs:documentation>The Header Business Object is used by all common messages. This provides
+				MTOSI based header information used for correlation, routing and problem determination</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element form="qualified" maxOccurs="1" minOccurs="0" name="messageId" nillable="false" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Unique message ID to be used for tracking messages</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element form="qualified" maxOccurs="1" minOccurs="0" name="correlationId" nillable="false" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>An identifier that could be set by the originator of an asynchronous request that will allow it to
+						correlate the response to the request. If this field is set, it should be reflected in the header of the response message. 
+						Not required for notification headers</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element form="qualified" maxOccurs="1" minOccurs="1" name="requestingApplication" nillable="false" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Source person or system that publishes the message</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element form="qualified" maxOccurs="1" minOccurs="0" name="dateTime" nillable="false" type="xs:dateTime">
+				<xs:annotation>
+					<xs:documentation>Message originating timestamp</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element form="qualified" maxOccurs="1" minOccurs="0" name="serviceAndOperation" nillable="false" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Identifies the name of the business transaction activity for the message being exchanged.
+						The value is usually the name of the operation, e.g. reserveResource, submitOrder. This value corresponds to the "operation" in the
+						WSDL</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element form="qualified" minOccurs="0" name="forEsbUseOnly" type="bons0:ForEsbUseOnly"/>
+		</xs:sequence>
+	</xs:complexType>
+      <xsd:complexType name="ForEsbUseOnly">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="trackingId" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="correlationId" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xs:complexType name="ExecutionStatusMessage">
+      <xs:sequence>
+         <xs:element name="severity" type="bons0:ExecutionStatusSeverity_Enum"/>
+         <!-- Indicates the name of the data source where the message originated (if it originated from a data source) -->
+         <xs:element minOccurs="1" name="service" type="xs:string"/>
+         <!-- Indicates the operation from the data source that was being called -->
+         <xs:element minOccurs="1" name="operation" type="xs:string"/>
+         <!-- Data source may have a code that could be passed through -->
+         <xs:element minOccurs="1" name="operationStatusCode" type="xs:string"/>
+         <!-- Brief description -->
+         <xs:element minOccurs="1" name="operationStatusDescription" type="xs:string"/>
+         <!-- Full text of the message, which may include stack trace -->
+         <xs:element minOccurs="0" name="miscellaneousInformation" type="xs:string"/>
+         <!-- Messages contained within this message -->
+         <xs:element maxOccurs="unbounded" minOccurs="0" name="executionStatusMessage" type="bons0:ExecutionStatusMessage"/>
+      </xs:sequence>
+   </xs:complexType>
+      <xs:simpleType name="ExecutionStatusSeverity_Enum">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="FATAL"/>
+         <xs:enumeration value="ERROR"/>
+         <xs:enumeration value="WARNING"/>
+         <xs:enumeration value="INFO"/>
+      </xs:restriction>
+   </xs:simpleType>
+      <xs:complexType name="Money">
+      <xs:annotation>
+         <xs:documentation>The amount of money that characterizes the price</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element form="qualified" maxOccurs="1" minOccurs="0" name="amount" nillable="true" type="bons0:CurrencyAmount_Type"/>
+         <xs:element form="qualified" maxOccurs="1" minOccurs="0" name="currency" nillable="true" type="xs:string"/>
+      </xs:sequence>
+   </xs:complexType>
+      <xsd:complexType name="AccountId">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="accountNumber" type="bons0:DpiAccountNumber_Type">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="telephoneNumber" type="bons0:TelephoneNumberAsId">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="universalServiceId" type="bons0:UniversalServiceIdentifier_Type">
+			</xsd:element>
+
+			<xsd:element minOccurs="0" name="environment" type="bons0:Environment_Type">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="CodeDescription">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="code" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="description" type="xsd:string">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+      <xsd:complexType name="ResponseHeader">
+      <xsd:complexContent>
+         <xsd:extension base="bons0:AbstractHeader">
+            <xsd:sequence>
+               <xsd:element maxOccurs="1" minOccurs="1" name="operationStatus" nillable="false">
+                  <xsd:annotation>
+                     <xsd:documentation>Specifies the high-level response status for an
+                        activity Required for response messages, including error responses.
+                        Allowed values are SUCCESS, FAILURE, WARNING</xsd:documentation>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                     <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="TRUE"/>
+                        <xsd:enumeration value="FALSE"/>
+                     </xsd:restriction>
+                  </xsd:simpleType>
+               </xsd:element>
+               <xsd:element maxOccurs="1" minOccurs="0" name="executionStatusMessage" type="bons0:ExecutionStatusMessage"/>
+            </xsd:sequence>
+         </xsd:extension>
+      </xsd:complexContent>
+   </xsd:complexType>
+    </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="CancelReprintOfBillingStatementsRequestMsg">
+      <wsdl:part element="tns:CancelReprintOfBillingStatements" name="CancelReprintOfBillingStatementsParameters"/>
+   </wsdl:message>
+   <wsdl:message name="CancelReprintOfBillingStatementsResponseMsg">
+      <wsdl:part element="tns:CancelReprintOfBillingStatementsResponse" name="CancelReprintOfBillingStatementsResult"/>
+   </wsdl:message>
+   <wsdl:message name="FindAccountReceivableRequestMsg">
+      <wsdl:part element="tns:FindAccountReceivable" name="FindAccountReceivableParameters1"/>
+   </wsdl:message>
+   <wsdl:message name="FindAccountReceivableResponseMsg">
+      <wsdl:part element="tns:FindAccountReceivableResponse" name="FindAccountReceivableResult1"/>
+   </wsdl:message>
+   <wsdl:message name="FindAvailableBillingCyclesRequestMsg">
+      <wsdl:part element="tns:FindAvailableBillingCycles" name="FindAvailableBillingCyclesParameters"/>
+   </wsdl:message>
+   <wsdl:message name="FindAvailableBillingCyclesResponseMsg">
+      <wsdl:part element="tns:FindAvailableBillingCyclesResponse" name="FindAvailableBillingCyclesResult"/>
+   </wsdl:message>
+   <wsdl:message name="FindPendingBillingStatementReprintRequestsRequestMsg">
+      <wsdl:part element="tns:FindPendingBillingStatementReprintRequests" name="FindPendingBillingStatementReprintRequestsParameters"/>
+   </wsdl:message>
+   <wsdl:message name="FindPendingBillingStatementReprintRequestsResponseMsg">
+      <wsdl:part element="tns:FindPendingBillingStatementReprintRequestsResponse" name="FindPendingBillingStatementReprintRequestsResult"/>
+   </wsdl:message>
+   <wsdl:message name="FindReprintableBillingStatementsRequestMsg">
+      <wsdl:part element="tns:FindReprintableBillingStatements" name="FindReprintableBillingStatementsParameters"/>
+   </wsdl:message>
+   <wsdl:message name="FindReprintableBillingStatementsResponseMsg">
+      <wsdl:part element="tns:FindReprintableBillingStatementsResponse" name="FindReprintableBillingStatementsResult"/>
+   </wsdl:message>
+   <wsdl:message name="ReprintBillingStatementsRequestMsg">
+      <wsdl:part element="tns:ReprintBillingStatements" name="ReprintBillingStatementsParameters"/>
+   </wsdl:message>
+   <wsdl:message name="ReprintBillingStatementsResponseMsg">
+      <wsdl:part element="tns:ReprintBillingStatementsResponse" name="ReprintBillingStatementsResult"/>
+   </wsdl:message>
+   <wsdl:message name="RetrieveBillingStatementRequestMsg">
+      <wsdl:part element="tns:RetrieveBillingStatement" name="RetrieveBillingStatementParameters"/>
+   </wsdl:message>
+   <wsdl:message name="RetrieveBillingStatementResponseMsg">
+      <wsdl:part element="tns:RetrieveBillingStatementResponse" name="RetrieveBillingStatementResult"/>
+   </wsdl:message>
+   <wsdl:message name="RetrieveConsolidatedBalanceRequestMsg">
+      <wsdl:part element="tns:RetrieveConsolidatedBalance" name="RetrieveConsolidatedBalanceParameters"/>
+   </wsdl:message>
+   <wsdl:message name="RetrieveConsolidatedBalanceResponseMsg">
+      <wsdl:part element="tns:RetrieveConsolidatedBalanceResponse" name="RetrieveConsolidatedBalanceResult"/>
+   </wsdl:message>
+   <wsdl:portType name="BillManagement">
+      <wsdl:operation name="CancelReprintOfBillingStatements">
+         <wsdl:input message="tns:CancelReprintOfBillingStatementsRequestMsg" name="CancelReprintOfBillingStatementsRequest"/>
+         <wsdl:output message="tns:CancelReprintOfBillingStatementsResponseMsg" name="CancelReprintOfBillingStatementsResponse"/>
+      </wsdl:operation>
+      <wsdl:operation name="FindAccountReceivable">
+         <wsdl:input message="tns:FindAccountReceivableRequestMsg" name="FindAccountReceivableRequest"/>
+         <wsdl:output message="tns:FindAccountReceivableResponseMsg" name="FindAccountReceivableResponse"/>
+      </wsdl:operation>
+      <wsdl:operation name="FindAvailableBillingCycles">
+         <wsdl:documentation>FindAvailableBillingCycles returns 0..* BillingCycles, for the specified environment, that can be ascribed to an order.
+         </wsdl:documentation>
+         <wsdl:input message="tns:FindAvailableBillingCyclesRequestMsg" name="FindAvailableBillingCyclesRequest"/>
+         <wsdl:output message="tns:FindAvailableBillingCyclesResponseMsg" name="FindAvailableBillingCyclesResponse"/>
+      </wsdl:operation>
+      <wsdl:operation name="FindPendingBillingStatementReprintRequests">
+         <wsdl:input message="tns:FindPendingBillingStatementReprintRequestsRequestMsg" name="FindPendingBillingStatementReprintRequestsRequest"/>
+         <wsdl:output message="tns:FindPendingBillingStatementReprintRequestsResponseMsg" name="FindPendingBillingStatementReprintRequestsResponse"/>
+      </wsdl:operation>
+      <wsdl:operation name="FindReprintableBillingStatements">
+         <wsdl:input message="tns:FindReprintableBillingStatementsRequestMsg" name="FindReprintableBillingStatementsRequest"/>
+         <wsdl:output message="tns:FindReprintableBillingStatementsResponseMsg" name="FindReprintableBillingStatementsResponse"/>
+      </wsdl:operation>
+      <wsdl:operation name="ReprintBillingStatements">
+         <wsdl:input message="tns:ReprintBillingStatementsRequestMsg" name="ReprintBillingStatementsRequest"/>
+         <wsdl:output message="tns:ReprintBillingStatementsResponseMsg" name="ReprintBillingStatementsResponse"/>
+      </wsdl:operation>
+      <wsdl:operation name="RetrieveBillingStatement">
+         <wsdl:documentation>RetrieveBillingStatementsDetails operation returns the Bill for a customer for the specified Billing Period. This process
+            invokes the AccessAPI_ManageAccount.RetrieveBillingStatementSummary. Below mentioned inputs are required for this process. All these are
+            mandatory elements. 1. employeeID 2. userID 3. telephoneNumber and sequenceNumber (or) universalServiceId 4. environment 5. billDate 6.
+            PIN</wsdl:documentation>
+         <wsdl:input message="tns:RetrieveBillingStatementRequestMsg" name="RetrieveBillingStatementRequest"/>
+         <wsdl:output message="tns:RetrieveBillingStatementResponseMsg" name="RetrieveBillingStatementResponse"/>
+      </wsdl:operation>
+      <wsdl:operation name="RetrieveConsolidatedBalance">
+         <wsdl:input message="tns:RetrieveConsolidatedBalanceRequestMsg" name="RetrieveConsolidatedBalanceRequest"/>
+         <wsdl:output message="tns:RetrieveConsolidatedBalanceResponseMsg" name="RetrieveConsolidatedBalanceResponse"/>
+      </wsdl:operation>
+   </wsdl:portType>
+    <wsdl:binding name="BillManagement_BillManagementHttpBinding" type="tns:BillManagement">
+      <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+      <wsdl:operation name="CancelReprintOfBillingStatements">
+         <soap:operation soapAction=""/>
+         <wsdl:input name="CancelReprintOfBillingStatementsRequest">
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output name="CancelReprintOfBillingStatementsResponse">
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="FindAccountReceivable">
+         <soap:operation soapAction=""/>
+         <wsdl:input name="FindAccountReceivableRequest">
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output name="FindAccountReceivableResponse">
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="FindAvailableBillingCycles">
+         <soap:operation soapAction=""/>
+         <wsdl:input name="FindAvailableBillingCyclesRequest">
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output name="FindAvailableBillingCyclesResponse">
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="FindPendingBillingStatementReprintRequests">
+         <soap:operation soapAction=""/>
+         <wsdl:input name="FindPendingBillingStatementReprintRequestsRequest">
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output name="FindPendingBillingStatementReprintRequestsResponse">
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="FindReprintableBillingStatements">
+         <soap:operation soapAction=""/>
+         <wsdl:input name="FindReprintableBillingStatementsRequest">
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output name="FindReprintableBillingStatementsResponse">
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="ReprintBillingStatements">
+         <soap:operation soapAction=""/>
+         <wsdl:input name="ReprintBillingStatementsRequest">
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output name="ReprintBillingStatementsResponse">
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="RetrieveBillingStatement">
+         <soap:operation soapAction=""/>
+         <wsdl:input name="RetrieveBillingStatementRequest">
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output name="RetrieveBillingStatementResponse">
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="RetrieveConsolidatedBalance">
+         <soap:operation soapAction=""/>
+         <wsdl:input name="RetrieveConsolidatedBalanceRequest">
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output name="RetrieveConsolidatedBalanceResponse">
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+   </wsdl:binding>
+    <wsdl:service name="BillManagement_BillManagementHttpService">
+      <wsdl:port binding="tns:BillManagement_BillManagementHttpBinding" name="BillManagement_BillManagementHttpPort">
+         <soap:address location="http://localhost:9080/BillManagement"/>
+      </wsdl:port>
+   </wsdl:service>
+</wsdl:definitions>
